@@ -8,6 +8,13 @@
 <a href="#🛍️-subpackages" id="🛍️-subpackages" style="color: inherit; text-decoration: none;">
   <h2>🛍️ Subpackages</h2>
 </a>
+<p>Many utilities are classified into many subpackages</p>
+<p><strong>NOTE</strong>: This package only support esmodule, basically you cannot use <code>require()</code></p>
+<p>You also need to use the very new version of node.js (16.9+) as it is requirement
+of discord.js</p>
+<pre><code class="language-js"><span class="hl-0">import</span><span class="hl-1"> { </span><span class="hl-2">some_stuff</span><span class="hl-1"> } </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-3">&quot;cocoa-discord-utils&quot;</span><span class="hl-1">; </span><span class="hl-4">// OK</span><br/><br/><span class="hl-5">const</span><span class="hl-1"> { </span><span class="hl-6">some_stuff</span><span class="hl-1"> } = </span><span class="hl-7">require</span><span class="hl-1">(</span><span class="hl-3">&quot;cocoa-discord-utils&quot;</span><span class="hl-1">); </span><span class="hl-4">// ERROR!</span>
+</code></pre>
+<p><em>Fun Fact</em>: I suffered from error revolving esmodule alot, muck.</p>
 
 <a href="#-index" id="-index" style="color: inherit; text-decoration: none;">
   <h3>/ (index)</h3>
@@ -37,7 +44,7 @@
 <a href="#internal" id="internal" style="color: inherit; text-decoration: none;">
   <h3>/internal</h3>
 </a>
-<p>As the name suggests</p>
+<p>As the name suggests, you should avoid touching this subpackage</p>
 <p><strong>Note</strong>: Command Management is inspired by discord.py&#39;s cogs system. 
 There are two implementations, one that are different, focuses on concept of
 one function per file. And the other one, that is more like discord.py&#39;s cogs.</p>
