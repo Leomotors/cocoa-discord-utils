@@ -33,7 +33,7 @@
 <ul>
 <li><p>discord.js</p>
 </li>
-<li><p>SlashCommandBuilder or JSON Structure of Slash Command</p>
+<li><p>SlashCommandBuilder (@discordjs/builders) or JSON Structure of Slash Command</p>
 </li>
 </ul>
 <h2 id="understand-the-concept">Understand the Concept</h2>
@@ -103,9 +103,11 @@ center.<span class="hljs-title function_">validateCommands</span>();
 <p><code>SlashCenter.validateCommands()</code> need to be called after all cogs are added
 to ensure that the condition mentioned above is met.</p>
 <h2 id="class-cog">Class Cog</h2>
-<p><strong>Note</strong>: This feature is achieved using dark magic. (See source code <a href="https://github.com/Leomotors/cocoa-discord-utils/blob/main/src/slash/class/index.ts">here</a>)</p>
-<p>However, it is working great <del>and is as stable as <a href="https://www.npmjs.com/package/s-bot-framework">S-Bot Framework</a></del>.</p>
-<p>It is marked as <code>stable</code> now.</p>
+<p><em>This syntax is inspired by discord.py</em></p>
+<p>Just to let you know that behind this beautiful syntax, it is achieved using
+dark magic. (See source code <a href="https://github.com/Leomotors/cocoa-discord-utils/blob/main/src/slash/class/index.ts">here</a>).
+But nothing to worry about it! Based on testing, it never break.
+So, it is marked as <code>stable</code> now.</p>
 <p><strong>To use Class Cog</strong>, We will need to extend the base class given,
 and implement methods/commands with decorator.</p>
 <p>The <code>CogClass</code> are based on Object Cog, so we can add it to management center
@@ -119,16 +121,31 @@ in the <del>same</del> similar way as the Object Cog.</p>
         <span class="hljs-variable language_">super</span>(<span class="hljs-string">&quot;Main Cog&quot;</span>, <span class="hljs-string">&quot;This is the main cog&quot;</span>);
     }
 
+    <span class="hljs-comment">// Normal Way</span>
     <span class="hljs-meta">@SlashCommand</span>(<span class="hljs-title class_">CocoaBuilder</span>(<span class="hljs-string">&quot;ping&quot;</span>, <span class="hljs-string">&quot;pong!&quot;</span>).<span class="hljs-title function_">toJSON</span>())
     <span class="hljs-keyword">async</span> <span class="hljs-title function_">ping</span>(<span class="hljs-params">ctx: CommandInteraction</span>) {
         <span class="hljs-keyword">await</span> ctx.<span class="hljs-title function_">reply</span>(<span class="hljs-string">&quot;pong!&quot;</span>);
     }
+
+    <span class="hljs-comment">// NEW!</span>
+    <span class="hljs-meta">@SlashCommand</span>(<span class="hljs-title class_">AutoBuilder</span>(<span class="hljs-string">&quot;pong!&quot;</span>))
+    <span class="hljs-keyword">async</span> <span class="hljs-title function_">ping</span>(<span class="hljs-params">ctx: CommandInteraction</span>) {
+        ...
+    }
+    <span class="hljs-comment">// With AutoBuilder, you can omit the name field,</span>
+    <span class="hljs-comment">// it will take the name from the method name</span>
+    <span class="hljs-comment">// From 1.2.0, with CogSlashClass, you can omit .toJSON()</span>
+
+    <span class="hljs-comment">// Always note that there is limitation on how you can name command</span>
+    <span class="hljs-comment">// But discord.js will throw error at start time, so nothing to worry about</span>
 }
 </code></pre>
-<p>And to add it to Slash Center</p>
+<p>The library will automatically bind your method to an instance, so you can use
+it like a class. Like, add some methods or properties!</p>
+<p>And to add it to Slash Center just like Object Cog</p>
 <pre><code class="language-ts">center.<span class="hljs-title function_">addCogs</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">MainCog</span>());
 </code></pre>
-<p>As CogSlashClass implements CogSlash, we can add it to Slash Center and even mix it with Object Cog.</p>
+<p>Because CogSlashClass implements CogSlash, we can add it to Slash Center and even mix it with Object Cog.</p>
 <p><strong>Note</strong>: Due to some TypeScript mumbo jumbo, you are required to explicitly 
 specify type in your method arguments.</p>
 <p><em>Argument Name can be changed, but must specify the correct type</em></p>

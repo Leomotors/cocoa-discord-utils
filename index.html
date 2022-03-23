@@ -6,6 +6,7 @@
 <a href="https://www.npmjs.com/package/cocoa-discord-utils"><img src="https://img.shields.io/npm/dt/cocoa-discord-utils.svg?maxAge=3600" alt=""></a>
 <a href="https://github.com/Leomotors/cocoa-discord-utils/actions"><img src="https://github.com/Leomotors/cocoa-discord-utils/actions/workflows/caffemocha.yml/badge.svg" alt=""></a></p>
 <p>Yet another Discord Bot Utility npm package</p>
+<!-- This component will be replace when building TypeDoc -->
 
 <a href="#for-typedoc-reader" id="for-typedoc-reader" style="color: inherit; text-decoration: none;">
   <h2>For TypeDoc Reader</h2>
@@ -13,7 +14,7 @@
 <ul>
 <li><p>You are viewing Documentation for Version 1.2.0</p>
 </li>
-<li><p>This Document is generated at 2022-03-23 16:43:23 (UTC+7)</p>
+<li><p>This Document is generated at 2022-03-23 17:09:22 (UTC+7)</p>
 </li>
 <li><p>You can read the fancy Guide <a href="./docs/index.html">HERE</a></p>
 </li>
@@ -36,8 +37,8 @@
 <p><strong>NOTE</strong>: You need to use the very new version of node.js (16.9+) as it is requirement
 of discord.js</p>
 
-<a href="#-index" id="-index" style="color: inherit; text-decoration: none;">
-  <h3>/ (index)</h3>
+<a href="#" id="" style="color: inherit; text-decoration: none;">
+  <h3>/</h3>
 </a>
 <p>Miscellanous, consists of many utility classes</p>
 
@@ -65,18 +66,16 @@ of discord.js</p>
   <h3>/internal</h3>
 </a>
 <p>As the name suggests, you should avoid touching this subpackage</p>
-<p><strong>Note</strong>: Command Management is inspired by discord.py&#39;s cogs system. 
-There are two implementations, one that are different, focuses on concept of
-one function per file. And the other one, that is more like discord.py&#39;s cogs.</p>
 
-<a href="#ltmessageslashgtclass" id="ltmessageslashgtclass" style="color: inherit; text-decoration: none;">
-  <h3>/&lt;message|slash&gt;/class</h3>
+<a href="#messageclass-amp-slashclass" id="messageclass-amp-slashclass" style="color: inherit; text-decoration: none;">
+  <h3>/message/class &amp; /slash/class</h3>
 </a>
 <p>To use Class Cog (with Decorators like discord.py), import them from /message/class
 or /slash/class.</p>
-<p>Note that Decorators are complex and I achieve this using <em>dark magic</em>,
-however, from testing, this is pretty stable.
-<strong>TypeScript is required to use Decorators</strong>.</p>
+<p><strong>TypeScript is required to use Decorators</strong>.</p>
+<p><strong>Note</strong>: Command Management is inspired by discord.py&#39;s cogs system. 
+There are two implementations, one that are different, focuses on concept of
+one function per file. And the other one, that is more like discord.py&#39;s cogs.</p>
 
 <a href="#✍️-discord-bots-that-use-this-package-aka-examples" id="✍️-discord-bots-that-use-this-package-aka-examples" style="color: inherit; text-decoration: none;">
   <h2>✍️ Discord Bots that use this Package a.k.a. Examples</h2>
@@ -85,6 +84,8 @@ however, from testing, this is pretty stable.
 <li><p><a href="https://github.com/Leomotors/cocoa-grader">Cocoa Grader</a></p>
 </li>
 <li><p><a href="https://github.com/CarelessDev/harunon.js">Harunon JS</a></p>
+</li>
+<li><p><a href="https://github.com/CarelessDev/bots-gulag">Bots Gulag</a></p>
 </li>
 </ul>
 <p>If you wish for examples, see above repositories</p>
@@ -99,9 +100,9 @@ or <a href="https://leomotors.github.io/cocoa-discord-utils/docs.html">Markdown 
 <li><p>See all type definitions/api at <a href="https://leomotors.github.io/cocoa-discord-utils/">TypeDoc</a></p>
 </li>
 </ul>
-<p><strong>Note</strong>: There is no Type Check in this package. To avoid unexpected behavior,
-<strong>please use TypeScript</strong> or activate @ts-check on JavaScript.</p>
-<p>To use generic type, TypeScript is required.</p>
+<p><strong>Note</strong>: For runtime safety, <strong>please use TypeScript</strong> or activate @ts-check on JavaScript.</p>
+<p>To use generic type and decorators (Cog Class Syntax), TypeScript is required.</p>
+<p><strong>Tips</strong>: Always use <em>await</em> with any async methods, so try-catch works.</p>
 
 <a href="#🍫-what-is-cocoa" id="🍫-what-is-cocoa" style="color: inherit; text-decoration: none;">
   <h2>🍫 What is Cocoa?</h2>
