@@ -45,8 +45,9 @@ center.<span class="hljs-title function_">on</span>(<span class="hljs-string">&q
     <span class="hljs-comment">// do smth</span>
 });
 </code></pre>
-<p>This will be call after the message is handled by command if it exists.</p>
-<p><code>name</code> - The name of function handled, Empty String if none.</p>
+<p>This will be call after a message is handled by command if it exists.
+Otherwise after it has been checked that this command does not exist.</p>
+<p><code>name</code> - The name of function handled, Empty String if is not handled (Not a command).</p>
 <p><code>msg</code> - Original Message Unmodified</p>
 <h2 id="slash-center-interaction">Slash Center: &quot;interaction&quot;</h2>
 <pre><code class="language-ts">center.<span class="hljs-title function_">on</span>(<span class="hljs-string">&quot;interaction&quot;</span>, <span class="hljs-function">(<span class="hljs-params">name, ctx</span>) =&gt;</span> {
