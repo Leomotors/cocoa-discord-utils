@@ -1,127 +1,20 @@
-<!DOCTYPE html><html class="default"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>cocoa-discord-utils</title><meta name="description" content="Documentation for cocoa-discord-utils"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>document.body.classList.add(localStorage.getItem("tsd-theme") || "os")</script><header><div class="tsd-page-toolbar"><div class="container"><div class="table-wrap"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption">Search</label><input type="text" id="tsd-search-field"/></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">cocoa-discord-utils</a></div><div class="table-cell" id="tsd-widgets"><div id="tsd-filter"><a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a><div class="tsd-filter-group"><div class="tsd-select" id="tsd-filter-visibility"><span class="tsd-select-label">All</span><ul class="tsd-select-list"><li data-value="public">Public</li><li data-value="protected">Public/Protected</li><li data-value="private" class="selected">All</li></ul></div> <input type="checkbox" id="tsd-filter-inherited" checked/><label class="tsd-widget" for="tsd-filter-inherited">Inherited</label><input type="checkbox" id="tsd-filter-externals" checked/><label class="tsd-widget" for="tsd-filter-externals">Externals</label></div></div><a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a></div></div></div></div><div class="tsd-page-title"><div class="container"><h1> cocoa-discord-utils </h1></div></div></header><div class="container container-main"><div class="row"><div class="col-8 col-content"><div class="tsd-panel tsd-typography">
-<a href="#cocoa-discord-utils" id="cocoa-discord-utils" style="color: inherit; text-decoration: none;">
-  <h1>Cocoa Discord Utils</h1>
-</a>
-<p><a href="https://www.npmjs.com/package/cocoa-discord-utils"><img src="https://img.shields.io/npm/v/cocoa-discord-utils.svg?maxAge=3600" alt=""></a>
-<a href="https://www.npmjs.com/package/cocoa-discord-utils"><img src="https://img.shields.io/npm/dt/cocoa-discord-utils.svg?maxAge=3600" alt=""></a>
-<a href="https://github.com/Leomotors/cocoa-discord-utils/actions"><img src="https://github.com/Leomotors/cocoa-discord-utils/actions/workflows/caffemocha.yml/badge.svg" alt=""></a></p>
-<p>Yet another Discord Bot Utility npm package</p>
-<!-- This component will be replace when building TypeDoc -->
-
-<a href="#for-typedoc-reader" id="for-typedoc-reader" style="color: inherit; text-decoration: none;">
-  <h2>For TypeDoc Reader</h2>
-</a>
-<ul>
-<li><p>You are viewing Documentation for Version 1.6.0</p>
-</li>
-<li><p>This Document is generated at 2022-04-22 18:08:52 (UTC+7)</p>
-</li>
-<li><p>You can read the fancy Guide <a href="./docs/index.html">HERE</a></p>
-</li>
-</ul>
-
-<a href="#✨-features" id="✨-features" style="color: inherit; text-decoration: none;">
-  <h2>✨ Features</h2>
-</a>
-<ul>
-<li><p>Many utilities that <strong>made by me for me</strong> to make my bots</p>
-</li>
-<li><p>Utilities that will help you reducing lines of code</p>
-</li>
-<li><p>Automatic Activity Presence Management from Files</p>
-</li>
-<li><p>Command Management (Message and Slash) System</p>
-</li>
-<li><p>many more miscellanous utilities that my bots rely on</p>
-</li>
-<li><p>Fully Type Safe for TypeScript (Also reason why this library&#39;s syntax is a bit strict)</p>
-</li>
-<li><p>Flexible, because this is not a framework, part of your bot can be constructed
-using pure discord.js API</p>
-</li>
-</ul>
-
-<a href="#🛍️-subpackages" id="🛍️-subpackages" style="color: inherit; text-decoration: none;">
-  <h2>🛍️ Subpackages</h2>
-</a>
-<p>Many utilities are classified into many subpackages</p>
-<p><strong>NOTE</strong>: You need to use the very new version of node.js (16.9+) as it is requirement
-of discord.js</p>
-
-<a href="#" id="" style="color: inherit; text-decoration: none;">
-  <h3>/</h3>
-</a>
-<p>Miscellanous, consists of many utility classes</p>
-
-<a href="#meta" id="meta" style="color: inherit; text-decoration: none;">
-  <h3>/meta</h3>
-</a>
-<p>Info Stuff, ex. Utils Version, Device Info, etc.</p>
-
-<a href="#message" id="message" style="color: inherit; text-decoration: none;">
-  <h3>/message</h3>
-</a>
-<p>Message Command Management</p>
-
-<a href="#slash" id="slash" style="color: inherit; text-decoration: none;">
-  <h3>/slash</h3>
-</a>
-<p>Slash Command Management</p>
-
-<a href="#template" id="template" style="color: inherit; text-decoration: none;">
-  <h3>/template</h3>
-</a>
-<p>Frequently used stuff</p>
-
-<a href="#internal" id="internal" style="color: inherit; text-decoration: none;">
-  <h3>/internal</h3>
-</a>
-<p>As the name suggests, you should avoid touching this subpackage</p>
-
-<a href="#messageclass-amp-slashclass" id="messageclass-amp-slashclass" style="color: inherit; text-decoration: none;">
-  <h3>/message/class &amp; /slash/class</h3>
-</a>
-<p>To use Class Cog (with Decorators like discord.py), import them from /message/class
-or /slash/class.</p>
-<p><strong>TypeScript is required to use Decorators</strong>.</p>
-<p><strong>Note</strong>: Command Management is inspired by discord.py&#39;s cogs system. 
-There are two implementations, one that are different, focuses on concept of
-one function per file. And the other one, that is more like discord.py&#39;s cogs.</p>
-
-<a href="#✍️-discord-bots-that-use-this-package-aka-examples" id="✍️-discord-bots-that-use-this-package-aka-examples" style="color: inherit; text-decoration: none;">
-  <h2>✍️ Discord Bots that use this Package a.k.a. Examples</h2>
-</a>
-<ul>
-<li><p><a href="https://github.com/Leomotors/cocoa-grader">Cocoa Grader</a></p>
-</li>
-<li><p><a href="https://github.com/CarelessDev/harunon.js">Harunon JS</a></p>
-</li>
-<li><p><a href="https://github.com/CarelessDev/bots-gulag">Bots Gulag</a></p>
-</li>
-</ul>
-<p>If you wish for examples, see above repositories</p>
-
-<a href="#📚-documentation" id="📚-documentation" style="color: inherit; text-decoration: none;">
-  <h2>📚 Documentation</h2>
-</a>
-<ul>
-<li><p>Doc &amp; Guide: <a href="./docs/index.md">Markdown (GitHub)</a> 
-or <a href="https://leomotors.github.io/cocoa-discord-utils/docs.html">Markdown in Fancy Website</a></p>
-</li>
-<li><p>See all type definitions/api at <a href="https://leomotors.github.io/cocoa-discord-utils/">TypeDoc</a></p>
-</li>
-</ul>
-<p><strong>Note</strong>: For runtime safety, <strong>please use TypeScript</strong> or activate @ts-check on JavaScript.</p>
-<p>To use generic type and decorators (Cog Class Syntax), TypeScript is required.</p>
-<p><strong>Tips</strong>: Always use <em>await</em> with any async methods, so try-catch works.</p>
-
-<a href="#🍫-what-is-cocoa" id="🍫-what-is-cocoa" style="color: inherit; text-decoration: none;">
-  <h2>🍫 What is Cocoa?</h2>
-</a>
-<p>Cocoa may have many meanings, but the name <code>Cocoa / ココア</code> that is used in this package as well as <code>cocoa-grader</code> refers to Cocoa Oneechan <code>保登心愛 from ご注文はうさぎですか？</code></p>
-<p><img src="https://c.tenor.com/82-e-VM5qNwAAAAC/gochiusa-cocoa.gif" alt=""></p>
-<p><em>nigerundayo... Smokey!</em> — No one said</p>
-<p>Anime Name: <a href="https://myanimelist.net/anime/21273/Gochuumon_wa_Usagi_Desu_ka">Is the Order a Rabbit?</a></p>
-<p>PS. This library has nothing to do with Cocoa (besides targeting Cocoa Grader
-which is just Waifu Discord Bot)</p>
-</div></div><div class="col-4 col-menu menu-sticky-wrap menu-highlight"><nav class="tsd-navigation primary"><ul><li class="current"><a href="modules.html">Modules</a></li><li class=" tsd-kind-module"><a href="modules/base.html">base</a></li><li class=" tsd-kind-module"><a href="modules/main.html">main</a></li><li class=" tsd-kind-module"><a href="modules/message.html">message</a></li><li class=" tsd-kind-module"><a href="modules/message_class.html">message/class</a></li><li class=" tsd-kind-module"><a href="modules/meta.html">meta</a></li><li class=" tsd-kind-module"><a href="modules/slash.html">slash</a></li><li class=" tsd-kind-module"><a href="modules/slash_class.html">slash/class</a></li><li class=" tsd-kind-module"><a href="modules/template.html">template</a></li></ul></nav></div></div></div><footer class="with-border-bottom"><div class="container"><h2>Legend</h2><div class="tsd-legend-group"><ul class="tsd-legend"><li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li><li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li><li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li><li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li></ul><ul class="tsd-legend"><li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li><li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li></ul><ul class="tsd-legend"><li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li><li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li></ul></div><h2>Settings</h2><p>Theme <select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></p></div></footer><div class="container tsd-generator"><p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div><div class="overlay"></div><script src="assets/main.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cocoa Discord Utils | Cocoa Discord Utils</title>
+    <meta name="description" content="Documentation for Cocoa Discord Utils, Library to simplify creating discord bots">
+    <link rel="stylesheet" href="/cocoa-discord-utils/assets/style.d90e8c3c.css">
+    <link rel="modulepreload" href="/cocoa-discord-utils/assets/app.40ff00ae.js">
+    <link rel="modulepreload" href="/cocoa-discord-utils/assets/index.md.edd710b1.lean.js">
+    
+    <script>(()=>{const e=localStorage.getItem("vitepress-theme-appearance"),a=window.matchMedia("(prefers-color-scheme: dark)").matches;(!e||e==="auto"?a:e==="dark")&&document.documentElement.classList.add("dark")})();</script>
+  </head>
+  <body>
+    <div id="app"><div class="Layout" data-v-6b5fd0a9><!--[--><!--]--><!--[--><span tabindex="-1" data-v-45f6ae50></span><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-45f6ae50> Skip to content </a><!--]--><!----><header class="VPNav no-sidebar" data-v-6b5fd0a9 data-v-0e356168><div class="VPNavBar" data-v-0e356168 data-v-8856f192><div class="container" data-v-8856f192><div class="VPNavBarTitle" data-v-8856f192 data-v-6a6f7ff6><a class="title" href="/cocoa-discord-utils/" data-v-6a6f7ff6><!----><!--[-->Cocoa Discord Utils<!--]--></a></div><div class="content" data-v-8856f192><!----><!----><!----><div class="VPNavBarAppearance appearance" data-v-8856f192 data-v-311055f2><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" aria-label="toggle dark mode" data-v-311055f2 data-v-781f9d1b data-v-1dda4c9c><span class="check" data-v-1dda4c9c><span class="icon" data-v-1dda4c9c><!--[--><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="sun" data-v-781f9d1b><path d="M12,18c-3.3,0-6-2.7-6-6s2.7-6,6-6s6,2.7,6,6S15.3,18,12,18zM12,8c-2.2,0-4,1.8-4,4c0,2.2,1.8,4,4,4c2.2,0,4-1.8,4-4C16,9.8,14.2,8,12,8z"></path><path d="M12,4c-0.6,0-1-0.4-1-1V1c0-0.6,0.4-1,1-1s1,0.4,1,1v2C13,3.6,12.6,4,12,4z"></path><path d="M12,24c-0.6,0-1-0.4-1-1v-2c0-0.6,0.4-1,1-1s1,0.4,1,1v2C13,23.6,12.6,24,12,24z"></path><path d="M5.6,6.6c-0.3,0-0.5-0.1-0.7-0.3L3.5,4.9c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l1.4,1.4c0.4,0.4,0.4,1,0,1.4C6.2,6.5,5.9,6.6,5.6,6.6z"></path><path d="M19.8,20.8c-0.3,0-0.5-0.1-0.7-0.3l-1.4-1.4c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l1.4,1.4c0.4,0.4,0.4,1,0,1.4C20.3,20.7,20,20.8,19.8,20.8z"></path><path d="M3,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h2c0.6,0,1,0.4,1,1S3.6,13,3,13z"></path><path d="M23,13h-2c-0.6,0-1-0.4-1-1s0.4-1,1-1h2c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path><path d="M4.2,20.8c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l1.4-1.4c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-1.4,1.4C4.7,20.7,4.5,20.8,4.2,20.8z"></path><path d="M18.4,6.6c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l1.4-1.4c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-1.4,1.4C18.9,6.5,18.6,6.6,18.4,6.6z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="moon" data-v-781f9d1b><path d="M12.1,22c-0.3,0-0.6,0-0.9,0c-5.5-0.5-9.5-5.4-9-10.9c0.4-4.8,4.2-8.6,9-9c0.4,0,0.8,0.2,1,0.5c0.2,0.3,0.2,0.8-0.1,1.1c-2,2.7-1.4,6.4,1.3,8.4c2.1,1.6,5,1.6,7.1,0c0.3-0.2,0.7-0.3,1.1-0.1c0.3,0.2,0.5,0.6,0.5,1c-0.2,2.7-1.5,5.1-3.6,6.8C16.6,21.2,14.4,22,12.1,22zM9.3,4.4c-2.9,1-5,3.6-5.2,6.8c-0.4,4.4,2.8,8.3,7.2,8.7c2.1,0.2,4.2-0.4,5.8-1.8c1.1-0.9,1.9-2.1,2.4-3.4c-2.5,0.9-5.3,0.5-7.5-1.1C9.2,11.4,8.1,7.7,9.3,4.4z"></path></svg><!--]--></span></span></button></div><div class="VPSocialLinks VPNavBarSocialLinks social-links" data-v-8856f192 data-v-0ae890f7 data-v-4dcbaf3a><!--[--><a class="VPSocialLink" href="https://github.com/Leomotors/cocoa-discord-utils" title="github" target="_blank" rel="noopener noreferrer" data-v-4dcbaf3a data-v-48c45ef6><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="icon" data-v-48c45ef6><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg><span class="visually-hidden" data-v-48c45ef6>github</span></a><!--]--></div><div class="VPFlyout VPNavBarExtra extra" data-v-8856f192 data-v-0562f5c0 data-v-8dccea88><button type="button" class="button" aria-haspopup="true" aria-expanded="false" aria-label="extra navigation" data-v-8dccea88><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="icon" data-v-8dccea88><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="5" cy="12" r="2"></circle></svg></button><div class="menu" data-v-8dccea88><div class="VPMenu" data-v-8dccea88 data-v-e73581a2><!----><!--[--><!--[--><!----><div class="group" data-v-0562f5c0><div class="item appearance" data-v-0562f5c0><p class="label" data-v-0562f5c0>Appearance</p><div class="appearance-action" data-v-0562f5c0><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" aria-label="toggle dark mode" data-v-0562f5c0 data-v-781f9d1b data-v-1dda4c9c><span class="check" data-v-1dda4c9c><span class="icon" data-v-1dda4c9c><!--[--><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="sun" data-v-781f9d1b><path d="M12,18c-3.3,0-6-2.7-6-6s2.7-6,6-6s6,2.7,6,6S15.3,18,12,18zM12,8c-2.2,0-4,1.8-4,4c0,2.2,1.8,4,4,4c2.2,0,4-1.8,4-4C16,9.8,14.2,8,12,8z"></path><path d="M12,4c-0.6,0-1-0.4-1-1V1c0-0.6,0.4-1,1-1s1,0.4,1,1v2C13,3.6,12.6,4,12,4z"></path><path d="M12,24c-0.6,0-1-0.4-1-1v-2c0-0.6,0.4-1,1-1s1,0.4,1,1v2C13,23.6,12.6,24,12,24z"></path><path d="M5.6,6.6c-0.3,0-0.5-0.1-0.7-0.3L3.5,4.9c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l1.4,1.4c0.4,0.4,0.4,1,0,1.4C6.2,6.5,5.9,6.6,5.6,6.6z"></path><path d="M19.8,20.8c-0.3,0-0.5-0.1-0.7-0.3l-1.4-1.4c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l1.4,1.4c0.4,0.4,0.4,1,0,1.4C20.3,20.7,20,20.8,19.8,20.8z"></path><path d="M3,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h2c0.6,0,1,0.4,1,1S3.6,13,3,13z"></path><path d="M23,13h-2c-0.6,0-1-0.4-1-1s0.4-1,1-1h2c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path><path d="M4.2,20.8c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l1.4-1.4c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-1.4,1.4C4.7,20.7,4.5,20.8,4.2,20.8z"></path><path d="M18.4,6.6c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l1.4-1.4c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-1.4,1.4C18.9,6.5,18.6,6.6,18.4,6.6z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="moon" data-v-781f9d1b><path d="M12.1,22c-0.3,0-0.6,0-0.9,0c-5.5-0.5-9.5-5.4-9-10.9c0.4-4.8,4.2-8.6,9-9c0.4,0,0.8,0.2,1,0.5c0.2,0.3,0.2,0.8-0.1,1.1c-2,2.7-1.4,6.4,1.3,8.4c2.1,1.6,5,1.6,7.1,0c0.3-0.2,0.7-0.3,1.1-0.1c0.3,0.2,0.5,0.6,0.5,1c-0.2,2.7-1.5,5.1-3.6,6.8C16.6,21.2,14.4,22,12.1,22zM9.3,4.4c-2.9,1-5,3.6-5.2,6.8c-0.4,4.4,2.8,8.3,7.2,8.7c2.1,0.2,4.2-0.4,5.8-1.8c1.1-0.9,1.9-2.1,2.4-3.4c-2.5,0.9-5.3,0.5-7.5-1.1C9.2,11.4,8.1,7.7,9.3,4.4z"></path></svg><!--]--></span></span></button></div></div></div><div class="group" data-v-0562f5c0><div class="item social-links" data-v-0562f5c0><div class="VPSocialLinks social-links-list" data-v-0562f5c0 data-v-4dcbaf3a><!--[--><a class="VPSocialLink" href="https://github.com/Leomotors/cocoa-discord-utils" title="github" target="_blank" rel="noopener noreferrer" data-v-4dcbaf3a data-v-48c45ef6><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="icon" data-v-48c45ef6><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg><span class="visually-hidden" data-v-48c45ef6>github</span></a><!--]--></div></div></div><!--]--><!--]--></div></div></div><button type="button" class="VPNavBarHamburger hamburger" aria-label="mobile navigation" aria-expanded="false" aria-controls="VPNavScreen" data-v-8856f192 data-v-6f008456><span class="container" data-v-6f008456><span class="top" data-v-6f008456></span><span class="middle" data-v-6f008456></span><span class="bottom" data-v-6f008456></span></span></button></div></div></div><!----></header><!----><!----><div class="VPContent is-home" id="VPContent" data-v-6b5fd0a9 data-v-a4c57a06><div class="VPHome" data-v-a4c57a06 data-v-3e80d098><!--[--><!--]--><div class="VPHero VPHomeHero" data-v-3e80d098 data-v-5d590baf><div class="container" data-v-5d590baf><div class="main" data-v-5d590baf><h1 class="name" data-v-5d590baf><span class="clip" data-v-5d590baf>Cocoa Discord Utils</span></h1><p class="text" data-v-5d590baf>For discord.js</p><p class="tagline" data-v-5d590baf>Simplifying how you create interactive Discord Bot with Slash Command ✨✨✨ (Version 2 is Work in Progress)</p><div class="actions" data-v-5d590baf><!--[--><div class="action" data-v-5d590baf><a class="VPButton medium brand" href="/cocoa-discord-utils/introduction/overview" data-v-5d590baf data-v-be07d988>Get Started</a></div><div class="action" data-v-5d590baf><a class="VPButton medium alt" href="https://github.com/Leomotors/cocoa-discord-utils" target="_blank" rel="noopener noreferrer" data-v-5d590baf data-v-be07d988>View on GitHub</a></div><div class="action" data-v-5d590baf><a class="VPButton medium alt" href="https://www.npmjs.com/package/cocoa-discord-utils" target="_blank" rel="noopener noreferrer" data-v-5d590baf data-v-be07d988>View on NPM</a></div><div class="action" data-v-5d590baf><a class="VPButton medium alt" href="/cocoa-discord-utils/typedoc/" data-v-5d590baf data-v-be07d988>View TypeDoc</a></div><!--]--></div></div><!----></div></div><!--[--><!--]--><!--[--><!--]--><div class="VPFeatures VPHomeFeatures" data-v-3e80d098 data-v-1812ea91><div class="container" data-v-1812ea91><div class="items" data-v-1812ea91><!--[--><div class="grid-3 item" data-v-1812ea91><article class="VPFeature" data-v-1812ea91 data-v-3aa4af24><!----><h2 class="title" data-v-3aa4af24>Build by me, for me</h2><p class="details" data-v-3aa4af24>It is used in all of my Discord Bots, most popular &#39;useful&#39; ones are Harunon https://github.com/CarelessDev/harunon.js</p></article></div><div class="grid-3 item" data-v-1812ea91><article class="VPFeature" data-v-1812ea91 data-v-3aa4af24><!----><h2 class="title" data-v-3aa4af24>Build with TypeScript</h2><p class="details" data-v-3aa4af24>Fully Type Safe and power your discord bot development with IntelliSense</p></article></div><div class="grid-3 item" data-v-1812ea91><article class="VPFeature" data-v-1812ea91 data-v-3aa4af24><!----><h2 class="title" data-v-3aa4af24>Cog System inspired by discord.py</h2><p class="details" data-v-3aa4af24>Get some fancy decorators on your functions and now it represents a slash command! (Message command also supported)</p></article></div><!--]--></div></div></div><!--[--><!--]--><div style="position:relative;" data-v-3e80d098><div></div></div></div></div><footer class="VPFooter" data-v-6b5fd0a9 data-v-5b331722><div class="container" data-v-5b331722><p class="message" data-v-5b331722>Documentation generated by Vitepress. This project/library is released under the MIT License</p><p class="copyright" data-v-5b331722>Copyright © 2021-2022 Leomotors</p></div></footer><!--[--><!--]--></div></div>
+    <script>__VP_HASH_MAP__ = JSON.parse("{\"cms_basic.md\":\"fb4bdad4\",\"cms_decorator.md\":\"cbfd4d99\",\"cms_event.md\":\"127d08ab\",\"cms_message.md\":\"d23bca09\",\"cms_other.md\":\"dfef02cb\",\"configuration_cocoarc.md\":\"8b8c5f37\",\"index.md\":\"edd710b1\",\"introduction_examples.md\":\"533eb641\",\"introduction_migrate.md\":\"e622d09d\",\"introduction_overview.md\":\"9982aca1\",\"migratev2.md\":\"316e85c2\",\"modules_cli.md\":\"290a2562\",\"modules_main.md\":\"9f9a03e5\",\"modules_meta.md\":\"f8a14676\",\"modules_msgslash.md\":\"811c280a\",\"modules_template.md\":\"b05e1868\",\"typedoc_index.md\":\"3ac60ef5\"}")</script>
+    <script type="module" async src="/cocoa-discord-utils/assets/app.40ff00ae.js"></script>
+    
+  </body>
+</html>
