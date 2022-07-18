@@ -1,1 +1,0 @@
-import{_ as e,c as r,o,a as t}from"./app.169bb3ee.js";const u=JSON.parse('{"title":"Examples","description":"","frontmatter":{},"headers":[],"relativePath":"introduction/examples.md","lastUpdated":1657282062000}'),a={name:"introduction/examples.md"},s=t("",5),n=[s];function i(l,c,p,d,_,h){return o(),r("div",null,n)}var f=e(a,[["render",i]]);export{u as __pageData,f as default};
