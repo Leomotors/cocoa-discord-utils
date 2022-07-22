@@ -1,1 +1,0 @@
-import{_ as a,c as e,o as s,a as t}from"./app.b9357a90.js";const y=JSON.parse('{"title":"Meta","description":"","frontmatter":{},"headers":[],"relativePath":"modules/meta.md","lastUpdated":1658192085000}'),o={name:"modules/meta.md"},n=t("",7),l=[n];function r(p,i,c,d,m,_){return s(),e("div",null,l)}var f=a(o,[["render",r]]);export{y as __pageData,f as default};
